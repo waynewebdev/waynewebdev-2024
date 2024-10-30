@@ -1,0 +1,26 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+!README.md
+
+# Ignore everything in the "wp-content" directory, except the "themes" and the "privacy-toolset" plugin.
+wp-content/*
+!wp-content/themes/
+wp-content/themes/twentytwenty/
+wp-content/themes/twentytwentyone/
+wp-content/themes/twentytwentytwo/
+wp-content/themes/twentytwentythree/
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/privacy-toolset/
+node_modules/
+uploads/
+vendor/
+.jscsrc
+.jshintignore
+.jshintrc
+*.txt
+*.log
+*.dist
+*.swp

@@ -13,5 +13,7 @@
  */
 
 get_header();
-echo "Hello, WayneWebDev!";
+?>
+
+<?php
 get_footer();

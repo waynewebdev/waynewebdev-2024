@@ -13,3 +13,14 @@ if (!defined('_S_VERSION')) {
   //patch
   define('_S_VERSION', '0.00.01');
 }
+/**
+ * Enqueue Styles
+ */
+function wwd_styles()
+{
+
+  wp_enqueue_style('wwd-style', get_theme_file_uri('style.css'), array(), _S_VERSION);
+  wp_style_add_data('wwd-style', 'rtl', 'replace');
+
+}
+add_action('wp_enqueue_scripts', 'wwd_styles');

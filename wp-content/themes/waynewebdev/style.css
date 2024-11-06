@@ -32,6 +32,11 @@ Text Domain: waynewebdev
   --accent-color: #0074d9;
   --background-color: #f0f8ff;
   --text-color: #1a1a2e;
+  .aura-explanation {
+    &.blue-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-blue.light-mode {
@@ -49,6 +54,11 @@ Text Domain: waynewebdev
   --accent-color: #16a085;
   --background-color: #1b3024;
   --text-color: #d7f8e3;
+  .aura-explanation {
+    &.green-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-green.light-mode {
@@ -66,6 +76,11 @@ Text Domain: waynewebdev
   --accent-color: #f39c12;
   --background-color: #3a2e0b;
   --text-color: #fff8d9;
+  .aura-explanation {
+    &.yellow-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-yellow.light-mode {
@@ -83,6 +98,11 @@ Text Domain: waynewebdev
   --accent-color: #8e44ad;
   --background-color: #2d1f33;
   --text-color: #f3e6ff;
+  .aura-explanation {
+    &.purple-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-purple.light-mode {
@@ -100,6 +120,11 @@ Text Domain: waynewebdev
   --accent-color: #c0392b;
   --background-color: #4b0f0f;
   --text-color: #ffe1e1;
+  .aura-explanation {
+    &.red-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-red.light-mode {
@@ -117,6 +142,11 @@ Text Domain: waynewebdev
   --accent-color: #7f8c8d;
   --background-color: #2a2d2e;
   --text-color: #f0f0f0;
+  .aura-explanation {
+    &.white-aura-show {
+      display: block;
+    }
+  }
 }
 
 .aura-white-silver.light-mode {
@@ -126,7 +156,20 @@ Text Domain: waynewebdev
   --background-color: #ffffff;
   --text-color: #2f3e46;
 }
-
+.aura-explanation {
+  display: none;
+  margin-top: auto;
+  margin-bottom: 2.5em;
+  span, p {
+    color: var(--text-color);
+    opacity: .8;
+  }
+}
+.wwd-logo {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+}
 .test-box {
   width: 50px;
   height: 50px;
@@ -148,27 +191,38 @@ Text Domain: waynewebdev
   background-color: var(--text-color);
 }
 #wwd-logo {
-  fill: #fff;
+  fill: var(--text-color);
 }
 #wwd-second {
-  fill: red;
+  fill: var(--primary-color);
 }
 #wwd-third {
-  fill: blue;
+  fill: var(--primary-color);
 }
 #wwd-fourth {
-  fill: yellow;
+  fill: var(--primary-color);
 }
 #wwd-fifth {
-  fill: green;
+  fill: var(--primary-color);
 }
 
 .ball {
   position: relative;
   width: 150px;
   height: 150px;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-
+.ball-text {
+  z-index: 99;
+  font-size: 2em;
+  text-align: center;
+}
 .ball span {
   position: absolute;
   width: calc(150px + var(--i));
@@ -220,8 +274,8 @@ html, body {
 }
 
 :root {
-  --color-bg1: rgb(108, 0, 162);
-  --color-bg2: rgb(0, 17, 82);
+  --color-bg1: var(--background-color);
+  --color-bg2: var(--background-color);
   --color1: 18, 113, 255;
   --color2: 221, 74, 255;
   --color3: 100, 220, 255;
@@ -270,7 +324,7 @@ html, body {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(40deg, var(--color-bg1), var(--color-bg2));
+  background: linear-gradient(40deg, var(--background-color), var(--primary-color));
   top: 0;
   left: 0;
 }
@@ -360,6 +414,11 @@ html, body {
   width: 100%;
   max-width: 40%;
   padding: 2em;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .wwd-main-content {
   width: 100%;

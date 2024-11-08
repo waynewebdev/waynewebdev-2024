@@ -210,7 +210,7 @@
                   </div>
                   <div class="wwd-main-content">
                         <div class="wwd-hero">
-                              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wayne-headshot.jpg"
+                              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wayne-headshot-aura-3.jpg"
                                    alt="Wayne Alan McWilliams"
                                    class="wwd-headshot" />
 
@@ -295,8 +295,8 @@
                   <div id="toggle-aura"
                        class="ball">
                         <div class="ball-text">Change Aura</div>
-                        <span style="--color: #fbad04; --i:18px; --d:2.5s;"></span>
-                        <span style="--color: #03a1d9; --i:13px; --d:5s;"></span>
-                        <span style="--color: #f7036d; --i:15px; --d:7.5s;"></span>
-                        <span style="--color: #93ff16; --i:20px; --d:10s;"></span>
+                        <span style="--color: var(--primary-color); --i:18px; --d:2.5s;"></span>
+                        <span style="--color: var(--secondary-color); --i:13px; --d:5s;"></span>
+                        <span style="--color: var(--accent-color); --i:15px; --d:7.5s;"></span>
+                        <span style="--color: var(--text-color); --i:20px; --d:10s;"></span>
                   </div>

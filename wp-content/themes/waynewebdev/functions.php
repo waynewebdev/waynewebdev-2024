@@ -23,4 +23,17 @@ function wwd_styles()
   wp_style_add_data('wwd-style', 'rtl', 'replace');
 
 }
-add_action('wp_enqueue_scripts', 'wwd_styles');
+//add_action('wp_enqueue_scripts', 'wwd_styles');
+
+function enqueue_my_theme_assets()
+{
+  // Get the theme directory URI
+  $theme_dir = get_template_directory_uri();
+
+  // Enqueue the CSS file
+  wp_enqueue_style('my-theme-styles', $theme_dir . '/dist/main.css', array(), _S_VERSION, 'all');
+
+  // Enqueue the JavaScript file
+  wp_enqueue_script('my-theme-scripts', $theme_dir . '/dist/bundle.js', array(), _S_VERSION, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_my_theme_assets');

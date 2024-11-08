@@ -130,7 +130,6 @@
                                     </g>
                               </svg>
                         </div>
-                        <button id="toggle-light-dark">Toggle Light/Dark Mode</button>
                         <div class="test-box primary"></div>
                         <div class="test-box secondary"></div>
                         <div class="test-box accent"></div>
@@ -299,4 +298,22 @@
                         <span style="--color: var(--secondary-color); --i:13px; --d:5s;"></span>
                         <span style="--color: var(--accent-color); --i:15px; --d:7.5s;"></span>
                         <span style="--color: var(--text-color); --i:20px; --d:10s;"></span>
+                  </div>
+
+                  <div class="toggle-switch-container">
+                        <div id="toggle-light-dark"
+                             class="toggle-switch switch-vertical">
+                              <input id="toggle-a"
+                                     type="radio"
+                                     name="switch"
+                                     checked="checked" />
+                              <!-- <label for="toggle-a">Option A</label> -->
+                              <input id="toggle-b"
+                                     type="radio"
+                                     name="switch" />
+                              <!-- <label for="toggle-b">Option B</label> -->
+                              <span class="toggle-outside">
+                                    <span class="toggle-inside"></span>
+                              </span>
+                        </div>
                   </div>

@@ -23,7 +23,19 @@
       </head>
 
       <body <?php body_class('bg-gradient-4 bg-fixed'); ?>>
+            <div class="glow-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wayne-really-blurry.png"
+                       alt="Wayne Alan McWilliams"
+                       class="wwd-headshot" />
+                  <div class="glowball"></div>
+                  <div class="glowball"
+                       style="--delay:-5s;--size:0.15;--speed:35s;"></div>
+                  <div class="glowball"
+                       style="--delay:-12s;--size:0.35;--speed:25s;"></div>
+                  <div class="glowball"
+                       style="--delay:-10s;--size:0.3;--speed:15s;"></div>
 
+            </div>
             <a href="#main-content"
                class="skip-link">Skip to main content</a>
 
@@ -208,8 +220,8 @@
 
                   </div>
                   <div class="wwd-main-content">
-                        <div class="wwd-hero">
-                              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wayne-headshot-aura-3.jpg"
+                        <!-- <div class="wwd-hero">
+                              <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wayne-really-blurry.png"
                                    alt="Wayne Alan McWilliams"
                                    class="wwd-headshot" />
 
@@ -253,7 +265,7 @@
                                           <div class="interactive"></div>
                                     </div>
                               </div>
-                        </div>
+                        </div> -->
                         <div class="test-content-box">
                               <h3>Project Title</h3>
                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate corporis nam a,
@@ -295,7 +307,7 @@
                        class="ball">
                         <div class="ball-text">Change Aura</div>
                         <span style="--color: var(--primary-color); --i:18px; --d:2.5s;"></span>
-                        <span style="--color: var(--secondary-color); --i:13px; --d:5s;"></span>
+                        <span style="--color: var(--contrast-color); --i:13px; --d:5s;"></span>
                         <span style="--color: var(--accent-color); --i:15px; --d:7.5s;"></span>
                         <span style="--color: var(--text-color); --i:20px; --d:10s;"></span>
                   </div>
